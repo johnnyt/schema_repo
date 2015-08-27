@@ -19,8 +19,12 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
+  spec.add_dependency "avro"
+  spec.add_dependency "diplomat"
+
   spec.add_development_dependency "bundler"
   spec.add_development_dependency "minitest", "= 5.4.2"
   spec.add_development_dependency "minitest-reporters"
+  spec.add_development_dependency "nsq-ruby"
   spec.add_development_dependency "rake"
 end

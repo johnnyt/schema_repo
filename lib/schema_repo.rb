@@ -1,5 +1,6 @@
 require "rubygems"
 require "schema_repo/version"
+require "digest"
 
 module SchemaRepo
   # Your code goes here...
